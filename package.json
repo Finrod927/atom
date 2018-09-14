@@ -29,12 +29,12 @@
 	"providedServices": {
 		"file-icons.element-icons": {
 			"versions": {
-				"1.0.0": "provideService"
+				"1.0.0": "addIconToElement"
 			}
 		},
 		"atom.file-icons": {
 			"versions": {
-				"1.0.0": "suppressFOUC"
+				"1.0.0": "iconClassForPath"
 			}
 		}
 	},
@@ -105,6 +105,13 @@
 					"order": 5,
 					"title": "Use .gitattributes",
 					"description": "Honour [`linguist-language`](https://github.com/github/linguist#using-gitattributes) attributes in local `.gitattributes` files."
+				},
+				"signature": {
+					"type": "boolean",
+					"default": true,
+					"order": 6,
+					"title": "Check file signatures",
+					"description": "Check the [`magic number`](https://en.wikipedia.org/wiki/Magic_number_%28programming%29) of files if every other strategy fails to match."
 				}
 			}
 		}
