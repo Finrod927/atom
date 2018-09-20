@@ -2,7 +2,7 @@
 
 const {FileSystem}     = require("atom-fs");
 const Options          = require("../lib/options.js");
-const LinguistStrategy = require("../lib/service/strategies/linguist-strategy.js");
+const LinguistStrategy = require("../lib/core/strategies/linguist-strategy.js");
 const {assertIconClasses, open, replaceText, resolvePath, revert, setup, wait} = require("./utils");
 const TreeView         = require("./utils/tree-view.js");
 const Tabs             = require("./utils/tabs.js");

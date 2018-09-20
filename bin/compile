@@ -4,7 +4,7 @@
 const fs           = require("fs");
 const path         = require("path");
 const getOpts      = require("get-options");
-const IconCompiler = require("../lib/icons/icon-compiler.js");
+const IconCompiler = require("../lib/compiler/icon-compiler.js");
 const {options, argv} = getOpts(process.argv.slice(2), {
 	"-h, -?, --help": "",
 });
@@ -36,8 +36,8 @@ if(!argv[0] && process.stdin.isTTY)
 			? reject(error)
 			: resolve(data.toString()));
 	}).then(data => {
-		const outputData = IconCompiler.compileConfigData(data, true);
-		const outputPath = path.resolve(__dirname, "..", "lib", "icons", ".icondb.js");
+		const outputData = new IconCompiler().compileConfigData(data, true);
+		const outputPath = path.resolve(__dirname, "..", "lib", "compiler", ".icondb.js");
 		return new Promise((resolve, reject) => {
 			fs.writeFile(outputPath, outputData, error => {
 				error ? reject(error) : resolve();
@@ -61,7 +61,7 @@ else new Promise((resolve, reject) => {
 		? reject(error)
 		: resolve(data.toString()));
 }).then(data => {
-	const output = IconCompiler.compileConfigData(data, true);
+	const output = new IconCompiler().compileConfigData(data, true);
 	process.stdout.write(output);
 }).catch(error => {
 	console.error(error);
