@@ -34,7 +34,7 @@
 		},
 		"atom.file-icons": {
 			"versions": {
-				"1.0.0": "iconClassForPath"
+				"1.0.0": "provideLegacyService"
 			}
 		}
 	},
