@@ -146,7 +146,7 @@ function getTempDir(){
 	const tmp = require("tmp");
 	return tmpDir = tmp.dirSync({
 		prefix: "file-icons@",
-		mode:   0o755
+		mode:   0o755,
 	});
 }
 
@@ -255,7 +255,8 @@ function rm(path){
 	try{
 		fs.unlinkSync(path);
 		FileSystem.get(path).destroy();
-	} finally{ }
+	}
+	finally{ }
 }
 
 
@@ -309,7 +310,7 @@ async function setup(name, opts = {}){
 	
 	// Block cursor from stealing focus during specs
 	if(!headless){
-		let onPress = event => {
+		const onPress = event => {
 			event.stopImmediatePropagation();
 			event.preventDefault();
 			return false;

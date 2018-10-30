@@ -17,8 +17,8 @@ describe("Modelines", () => {
 				["mode-php.inc",   "test-2"],
 				["mode-ruby",      "test-3"],
 				["mode-c++",       "test-4"],
-				["mode-js",        "test-5"]
-			]
+				["mode-js",        "test-5"],
+			],
 		});
 		TreeView.refresh();
 		TreeView.entries.should.not.be.empty;
@@ -56,7 +56,7 @@ describe("Modelines", () => {
 		["mode-ruby6",     "default-icon"],
 		["mode-ruby7",     "default-icon"],
 		["mode-ruby8",     "default-icon"],
-		["mode-ruby9",     "default-icon"]
+		["mode-ruby9",     "default-icon"],
 	];
 	
 	
@@ -79,7 +79,7 @@ describe("Modelines", () => {
 				["symlinks/test-2", "icon-file-symlink-file dark-blue"],
 				["symlinks/test-3", "icon-file-symlink-file medium-red"],
 				["symlinks/test-4", "icon-file-symlink-file medium-blue"],
-				["symlinks/test-5", "icon-file-symlink-file medium-yellow"]
+				["symlinks/test-5", "icon-file-symlink-file medium-yellow"],
 			]);
 		};
 		

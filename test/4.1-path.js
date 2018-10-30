@@ -40,7 +40,7 @@ describe("Path", () => {
 				["typings.json",             base + "typings-icon    medium-maroon"],
 				["webpack.config.js",        base + "webpack-icon    medium-blue"],
 				["wercker.yml",              base + "wercker-icon    medium-purple"],
-				["yarn.lock",                base + "yarn-icon       medium-blue"]
+				["yarn.lock",                base + "yarn-icon       medium-blue"],
 			]);
 			
 			assertIconClasses(TreeView.files, [
@@ -61,7 +61,7 @@ describe("Path", () => {
 				["typings.json",             "database-icon"],
 				["webpack.config.js",        "js-icon config-icon"],
 				["wercker.yml",              "database-icon"],
-				["yarn.lock",                "database-icon"]
+				["yarn.lock",                "database-icon"],
 			], true);
 		});
 	});
@@ -75,7 +75,7 @@ describe("Path", () => {
 				["git.git/case/ignored.Js",   base + "js-icon       medium-yellow"],
 				["git.git/case/ignored.pHP",  base + "php-icon      dark-blue"],
 				["git.git/case/ignored.rB",   base + "ruby-icon     medium-red"],
-				["git.git/case/ignored.yaML", base + "yaml-icon     medium-red"]
+				["git.git/case/ignored.yaML", base + "yaml-icon     medium-red"],
 			]);
 		});
 		
@@ -84,14 +84,14 @@ describe("Path", () => {
 				["e.E",                       base + "e-icon        medium-green"],
 				["eiffel.e",                  base + "eiffel-icon   medium-cyan"],
 				["git.git/case/obeyed-1.e",   base + "eiffel-icon   medium-cyan"],
-				["git.git/case/obeyed-2.E",   base + "e-icon        medium-green"]
+				["git.git/case/obeyed-2.E",   base + "e-icon        medium-green"],
 			]);
 			assertIconClasses(TreeView.files, [
 				["e.E",                       "eiffel-icon          medium-cyan"],
 				["eiffel.e",                  "e-icon               medium-green"],
 				["git.git/case/obeyed-1.e",   "e-icon               medium-green"],
 				["git.git/case/obeyed-2.E",   "eiffel-icon          medium-cyan"],
-				["git.git/case/merge_msg",    "git-merge-icon       medium-red"]
+				["git.git/case/merge_msg",    "git-merge-icon       medium-red"],
 			], true);
 		});
 		
@@ -130,7 +130,7 @@ describe("Path", () => {
 				["frameworks/sencha.js",                 base + "sencha-icon        light-green"],
 				["frameworks/snap.svg.js",               base + "snapsvg-icon       medium-cyan"],
 				["frameworks/uikit.min.js",              base + "uikit-icon         medium-blue"],
-				["frameworks/yui.js",                    base + "yui-icon           dark-blue"]
+				["frameworks/yui.js",                    base + "yui-icon           dark-blue"],
 			]);
 		});
 		
@@ -157,7 +157,7 @@ describe("Path", () => {
 				[".meteor",           base + "meteor-icon   dark-orange"],
 				[".vagrant",          base + "vagrant-icon  medium-cyan"],
 				["bower_components",  base + "bower-icon    medium-yellow"],
-				["Dropbox",           base + "dropbox-icon  medium-blue"]
+				["Dropbox",           base + "dropbox-icon  medium-blue"],
 			]);
 		});
 		
